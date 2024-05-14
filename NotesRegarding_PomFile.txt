@@ -1,0 +1,22 @@
+Another than pom file all code is in develop branch 
+
+
+
+
+//In this pom file mainly we add --->notepad form mai as pom.xml file aise open nhi hoti 
+All the dependenecies ie jar 
+so in pom.xml file 1
+  we have added selenium,apache.poi,testng jar files 
+
+
+
+
+
+In src/test/java-->we add new classes
+
+
+
+Notes Have --->
+           29 April :How to configure Maven in our project
+
+           1st May: configure testng both in maven and java project
