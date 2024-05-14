@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<!--Agr cross browser testibg krni hai toh testname alg alg hone chahiye agr same rkha toh exception mile yeh 
+
+ org.testng.TestNGException: 
+Two tests in the same suite [SearchIndia_DifferentBrowser_Suite] cannot have the same name: SearchIndia_DifferentBrowser_Test
+	at org.testng.xml.internal.XmlSuiteUtils.ensureNoDuplicateTestsArePresent(XmlSuiteUtils.java:67)
+	at org.testng.xml.internal.XmlSuiteUtils.validateIfSuitesContainDuplicateTests(XmlSuiteUtils.java:28)
+	at org.testng.TestNG.sanityCheck(TestNG.java:999)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+-->
+<!--In cross browser testing we will decide which which browser we want to run our testcase -->
+<suite name="SearchIndia_DifferentBrowser_Suite">
+	
+	<!-- step 9 This test is for chromebroswer-->
+  <!-- step 9 dont put same name for all the test 
+  test thread-count="5" name="SearchIndia_DifferentBrowser_Test"-->
+	<!--sp iss test ka naame hai ChromeBrowser-->
+	 <test thread-count="5" name="ChromeBrowser">
+	<!--If we use single browser so ek he test hoga define  -->
+	<parameter name="browser" value="chrome">  <!-- here we want to run in chrome browser isliyi humne chrome value di hai -->
+	</parameter>  <!--here nmae value is same we passed in @Paramter annotation in the class nad what to pass in value field we will decide   -->
+	
+	<classes>
+		
+		<class name="CrossBrowserTesting.LaunchGoogle_SearchIndia_CBT">  <!--nmae of class =packagename.classanme-->
+		</class>
+		
+	</classes>
+	 </test>
+   <!-- SearchIndia_DifferentBrowser_Test -->
+  
+  <!-- step 9 ab humko cross browser testing karni hai so copy paste test and do perform cross browser testing -->
+  
+  <!-- step 9 This test is for Firefoxbroswer-->
+  <!-- step 9 dont put same name for all the test 
+  test thread-count="5" name="SearchIndia_DifferentBrowser_Test"-->
+	<!--so iss test ka naame hai FireFoxBrowser-->
+	
+	 <test thread-count="5" name="FireFoxBrowser">
+	<parameter name="browser" value="firefox">  
+	</parameter>  
+	<classes>
+		<class name="CrossBrowserTesting.LaunchGoogle_SearchIndia_CBT">  
+		</class>
+	</classes>
+  </test> <!-- SearchIndia_DifferentBrowser_Test -->
+  
+  <!-- step 9 This test is for Edgebroswer-->
+  <!-- step 9 This test is for Firefoxbroswer-->
+  <!-- step 9 dont put same name for all the test 
+  test thread-count="5" name="SearchIndia_DifferentBrowser_Test"-->
+	<!--so iss test ka naame hai EdgeBrowser-->
+	
+	 <test thread-count="5" name="EdgeBrowser">
+	<parameter name="browser" value="edge">  
+	</parameter>  
+	<classes>
+		<class name="CrossBrowserTesting.LaunchGoogle_SearchIndia_CBT">  
+		</class>
+	</classes>
+  </test> <!-- SearchIndia_DifferentBrowser_Test -->
+  
+</suite> <!-- SearchIndia_DifferentBrowser_Suite -->
