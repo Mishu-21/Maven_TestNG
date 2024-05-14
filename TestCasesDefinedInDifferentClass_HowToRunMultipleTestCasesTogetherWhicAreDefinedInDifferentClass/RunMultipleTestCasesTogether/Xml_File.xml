@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RunMultipleTestCasesSuite">
+  <test thread-count="5" name="RunMultipleTestCases">
+    <classes>
+		
+	<!--	below comment synatx    -->
+	
+		<!--order of execution based on the classes name passed -->
+		
+      <class name="RunMultipleTestCasesTogether.TestCase1"/>
+      <class name="RunMultipleTestCasesTogether.TestCase4"/>
+      <class name="RunMultipleTestCasesTogether.TestCase5"/>
+      <class name="RunMultipleTestCasesTogether.TestCase2"/>
+      <class name="RunMultipleTestCasesTogether.TestCase3"/>
+    </classes>
+  </test> <!-- RunMultipleTestCases -->
+</suite> <!-- RunMultipleTestCasesSuite -->
+
+
+<!-- ORDER OF EXECUTION:
+method1
+method4
+method4_1
+method5
+method2
+method2_1
+method2_2
+method3
+
+-->

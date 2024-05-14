@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RunMultipleTestCase_WithProperWorkflow_Suite">
+  <test thread-count="5" name="RunMultipleTestCase_WithProperWorkflow">
+    <classes>
+      <class name="RunMultipleTestCase_WithProperWorkflow.Scenerio2_Select_Demo2_SelectByVisibleText"/>
+        <class name="RunMultipleTestCase_WithProperWorkflow.Scenerio3_TwoTestCases"/>
+      <class name="RunMultipleTestCase_WithProperWorkflow.Scenerio1_LaunchGoogle_TypeIndia_PressEnter"/>
+    
+    </classes>
+  </test> <!-- RunMultipleTestCase_WithProperWorkflow -->
+</suite> <!-- RunMultipleTestCase_WithProperWorkflow_Suite -->

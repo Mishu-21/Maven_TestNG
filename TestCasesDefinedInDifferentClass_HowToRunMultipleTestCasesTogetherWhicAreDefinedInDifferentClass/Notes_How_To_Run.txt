@@ -1,0 +1,7 @@
+Test Cases Defined In Different Class_How To Run Multiple Test Cases Together Which Are Defined In Different Class
+
+as ur testcases are defined in a package -->Right click on package 
+                                            tesng->Covert to testng and xml file will be generatated 
+Run from their 
+      
+
