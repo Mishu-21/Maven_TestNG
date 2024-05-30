@@ -1,0 +1,19 @@
+amazon login details 
+
+phone no.  +917834898482
+Password  Himanshi21@Chauhan
+
+
+
+Kabhi Kabhi login karke bhi code ya capache aayega first time usko manually sort karo 
+uske baad it will run fine
+
+
+
+this code is minimise.
+
+what we did???
+            1. We added once more class ie launchQuit and in that we have created 2 methods
+                        launch() method with @BeforeMethod Annotation------->having code to launch the browser and the url as its comon step in all the test cases
+                        Quit() method with @AfterMethod Annotation
+            2. and than in all testcases we  extends this class so that @BeforeMethod is executed before @Test execution and than @AfterMethod is executed
